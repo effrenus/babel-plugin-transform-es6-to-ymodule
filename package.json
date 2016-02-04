@@ -1,0 +1,26 @@
+{
+  "name": "babel-plugin-ymodules",
+  "version": "1.0.0",
+  "description": "Support ES6 modules syntax for YModules",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "mocha --compilers js:babel-register"
+  },
+  "keywords": [
+    "babel",
+    "modules",
+    "ymodules",
+    "mapsapi",
+    "yandex"
+  ],
+  "author": "Alexey Sazonov",
+  "license": "MIT",
+  "devDependencies": {
+    "babel": "^6.3.26",
+    "babel-core": "^6.4.5",
+    "babel-preset-es2015": "^6.3.13",
+    "babel-register": "^6.4.3",
+    "babel-types": "^6.4.5",
+    "mocha": "^2.4.5"
+  }
+}
