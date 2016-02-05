@@ -1,6 +1,6 @@
 {
   "name": "babel-plugin-es6-ymodule",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Support ES6 modules syntax for YModules",
   "main": "src/index.js",
   "scripts": {
