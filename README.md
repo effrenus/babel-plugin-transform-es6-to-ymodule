@@ -4,7 +4,7 @@ Transform ES6 module syntax to YModule declarations
 
 ## Plugin settings
 
-`namespace` - modules prefix
+* `namespace` - modules prefix
 
 ## Example
 

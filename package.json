@@ -1,13 +1,17 @@
 {
-  "name": "babel-plugin-es6-ymodule",
-  "version": "1.0.1",
-  "description": "Support ES6 modules syntax for YModules",
-  "main": "src/index.js",
+  "name": "babel-plugin-transform-es6-to-ymodule",
+  "version": "1.0.2",
+  "description": "Transform ES6 module syntax to YModules declarations",
+  "main": "lib/index.js",
   "scripts": {
-    "test": "mocha --compilers js:babel-register"
+    "clean": "rimraf lib",
+    "build": "babel src -d lib",
+    "test": "mocha --compilers js:babel-register",
+    "prepublish": "npm run clean && npm run build"
   },
   "keywords": [
     "babel",
+    "plugin",
     "modules",
     "ymodules",
     "mapsapi",
@@ -17,7 +21,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/effrenus/babel-plugin-es6-ymodule.git"
+    "url": "https://github.com/effrenus/babel-plugin-transform-es6-to-ymodule.git"
   },
   "devDependencies": {
     "assert": "^1.3.0",
@@ -26,6 +30,7 @@
     "babel-preset-es2015": "^6.3.13",
     "babel-register": "^6.4.3",
     "babel-types": "^6.4.5",
-    "mocha": "^2.4.5"
+    "mocha": "^2.4.5",
+    "rimraf": "^2.5.1"
   }
 }
